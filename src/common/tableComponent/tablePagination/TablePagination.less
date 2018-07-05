@@ -1,0 +1,40 @@
+:global{
+    .common_pagination{
+        position : absolute;
+        left : 2.5rem;
+        bottom : 0;
+        width : calc( ~'100% - 5rem' );
+        height : 50px;
+        display : -webkit-flex;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+    }
+
+    /*页码*/
+    .common_pagination .ant-pagination-item:focus{ border : 1px solid #5d9cec; }
+    .common_pagination .ant-pagination-item:hover{ border : 1px solid #5d9cec; }
+    .common_pagination .ant-pagination-item{ border : 1px solid #5d9cec; }
+    .common_pagination .ant-pagination-item a{ color : #333; }
+    .common_pagination .ant-pagination-item:focus a{ color : #333; }
+    .common_pagination .ant-pagination-item:hover a{ color : #333; }
+    .common_pagination .ant-pagination-item-active:focus{ border : 1px solid #5d9cec; }
+    .common_pagination .ant-p active:hover{ border : 1px solid #5d9cec; }
+    .common_pagination .ant-pagination-item-active{ border : 1px solid #5d9cec; background : #5d9cec; }
+    .common_pagination .ant-pagination-item-active a{ color : #fff; }
+    .common_pagination .ant-pagination-item-active:focus a{ color : #fff; }
+    .common_pagination .ant-pagination-item-active:hover a{ color : #fff; }
+
+    /*分页前后*/
+    .common_pagination .ant-pagination-prev:focus .ant-pagination-item-link, .ant-pagination-next:focus .ant-pagination-item-link, .ant-pagination-prev:hover .ant-pagination-item-link, .ant-pagination-next:hover .ant-pagination-item-link{
+        border : 1px solid #9ca0ba;
+        color : #333;
+    }
+
+}
+.show_total{
+    position : absolute;
+    margin : auto; top : 0; bottom : 0; left : 0;
+    height : 18px;
+    line-height : 18px;
+}

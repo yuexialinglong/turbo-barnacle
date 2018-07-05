@@ -1,0 +1,41 @@
+@unit:750/100vw;
+
+div,ul,li,a,tr,td,span{box-sizing: border-box;list-style-type:none;margin:0;padding:0}
+
+
+.wrap{
+    font-size: 36/@unit;color:#fff;
+    padding-top:60/@unit;
+    .card{
+        width: 714/@unit;height:439/@unit;
+        background-size: 100% 100%;
+        background-image: url(../../../assets/image/alipay_bg.png);
+        margin:0 auto;padding: 70/@unit;
+        font-weight:600;
+        >div{height: 60/@unit;line-height: 60/@unit;}
+        .icon{
+            width:60/@unit;height:60/@unit;
+            background-size: 100% 100%;
+            background-image: url(../../../assets/image/add.png);
+            margin-right:20/@unit;
+        }
+        .add{
+            display:inline-block;vertical-align: middle;
+            margin-top:70/@unit;
+        }
+    }
+}
+.submit{
+    width: 610/@unit;height:100/@unit;
+    border-radius:100/@unit;
+    background-color:#ECECEC;color:#d2d1d1;
+    line-height: 100/@unit;margin:0 auto;
+    text-align: center;margin-top:40/@unit;
+    &.active{
+        background: -webkit-linear-gradient(left, #FF433F , #FF406E); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(right, #FF433F, #FF406E); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(right, #FF433F, #FF406E); /* Firefox 3.6 - 15 */
+        background: linear-gradient(to right, #FF433F , #FF406E); /* 标准的语法 */
+        color:#fff;
+    }
+}

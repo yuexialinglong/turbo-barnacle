@@ -1,0 +1,91 @@
+@import '../../../../common/commonLess/CommonLess.less';
+
+.sys_manage_all{
+    width : 100%;
+    height : 100%;
+    padding : 2.25rem 3.31rem;
+    min-width : 800px;
+}
+.source_title{
+    width : 100%;
+    height : 2rem;
+    padding : 0 1.75rem;
+    background-image: linear-gradient(0deg, rgba(124, 142, 206, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), linear-gradient(#c9cddc, #c9cddc);
+	background-blend-mode: normal, normal;
+    .borderRadius(10px,10px,0,0);
+    display : -webkit-flex;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+}
+.source_title_intro{
+    display : -webkit-flex;
+    display : flex;
+    align-items : center;
+    >div:first-child{ margin-right : 5px; }
+}
+.source_add{
+    height : 50%;
+    padding : 10px 20px;
+    border : 1px solid #999;
+    border-radius : 4px;
+    cursor : pointer;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content : center;
+    align-items : center;
+}
+.source_title_intro_help{
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    i{ color : #5d9cec; margin-right : 5px; }
+    >div:not(last-child){ margin-right : 10px; }
+}
+.source_content{
+    width : 100%;
+    overflow : auto;
+    padding : 1.25rem 1.75rem;
+    background-color : #fff;
+    .borderRadius(0,0,10px,10px);
+    .transition(all .3s);
+}
+.render_item{
+    height : 1.8rem;
+    width : 100%;
+    border : 1px solid #ddd;
+    &:not(:first-child){ border-top : 0; }
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+}
+.render_item_content{
+    height : 100%;
+    width : 100%/3;
+    padding : 0 10px;
+    display : -webkit-flex;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    border-right : 1px solid #ddd;
+    &:last-child{ border-right : none }
+    >div{
+        white-space : nowrap;
+        overflow : hidden;
+        .textOverflow(ellipsis);
+        display : -webkit-flex;
+        display : flex;
+        flex-wrap : nowrap;
+        align-items : center;
+        input{ margin-right : 10px; }
+    }
+    i{
+        font-size : 0.8rem;
+        margin-right : 10px;
+        cursor : pointer;
+        .transition(color .3s);
+        &:hover{ color : #5d9cec; }
+        &:last-child{ margin : 0 }
+    }
+}

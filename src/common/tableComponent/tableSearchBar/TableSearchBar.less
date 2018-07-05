@@ -1,0 +1,58 @@
+@import '../../commonLess/CommonLess.less';
+
+/* common_form_item 覆盖样式 写在index.css中 */
+.all{
+    padding : 1rem 2.5rem 0;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : wrap;
+    align-items : baseline;
+}
+.fast_form_item{
+    margin-bottom : 1rem;
+    &:not(:last-child){ margin-right : 2rem; }
+    &:before{
+        margin-right : 5px;
+        content : attr(data-label);
+    }
+}
+.super_form_item{
+    display : -webkit-flex;
+    display : flex;
+    flex-direction : column;
+    &:not(:last-child){ margin-bottom : 12px; }
+    &:before{
+        margin-bottom : 3px;
+        content : attr(data-label);
+    }
+}
+
+.btn_group_wrap{
+    flex : 1;
+    display : -webkit-flex;
+    display : flex;
+    justify-content : flex-end;
+    align-items : center;
+}
+
+.btn_group_item{
+    height : 26px;
+    margin-left : 1rem;
+//    color : rgba( 48, 71, 109, 1);
+    border : 1px solid #999;
+    padding : 0 12px;
+//    i{ color : rgba(48,71,109,1); }
+//    &:hover,&:focus{
+//        color : rgba(48,71,109,.8);
+//        border : 1px solid rgba(46,70,108,.8);
+//        i{ color : rgba(48,71,109,.8); }
+//    }
+}
+.super_search_enter{
+    font-size : 14px;
+    margin-left : 1rem;
+    cursor : pointer;
+    .transition(all .2s);
+    i{ margin-right : 5px; }
+    &:hover{ color : #5d9cec; }
+}

@@ -1,0 +1,5 @@
+[
+    { "key" : "todayShouldStuCnt" , "label" : "今日应到学生数" },
+    { "key" : "yestodayShouldStuCnt" , "label" : "昨日应到学生数" },
+    { "key" : "todayShouldLessonCnt" , "label" : "今日应上课时数" }
+]

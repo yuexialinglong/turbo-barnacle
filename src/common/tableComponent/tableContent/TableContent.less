@@ -1,0 +1,87 @@
+:global{
+    .common_table{
+        position : relative;
+        width : calc( ~'100% - 5rem' );
+        margin : 0 auto;
+        height : 100%;
+    }
+    .common_table .ant-table-bordered .ant-table-thead > tr > th, .ant-table-bordered .ant-table-tbody > tr > td{ border-right : 0;  }
+    .common_table .ant-table-bordered .ant-table-thead > tr > th{
+        background-image: linear-gradient(0deg, rgba(124, 142, 206, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), linear-gradient(#c9cddc, #c9cddc);
+        background-blend-mode: normal, normal;
+        padding : 10px 16px;
+        text-align : center;
+        color : #333;
+    }
+    .common_table .ant-table-body{ border-bottom : 1px solid #ddd; }
+    .common_table .ant-table-tbody > tr{
+        &:nth-child(odd){ background-color : #fff; }
+        &:nth-child(even){ background-color : rgba(176, 192, 200, 0.15); }
+    }
+    .common_table .ant-table-tbody > tr > td{
+		border-bottom-width : 0;
+		border-color : #ddd;
+		text-align : center;
+        height : 36px;
+		position : relative;
+        padding : 0;
+	}
+	.common_table .ant-table-tbody > tr > td > a,.common_table .ant-table-body tr > td > span{
+		position : absolute;
+		top : 7px;
+		left : 16px;
+		display : inline-block;
+		width : calc( ~'100% - 32px' );
+		text-overflow : ellipsis;
+		white-space : nowrap;
+		overflow : hidden;
+	}
+    .ant-table-bordered .ant-table-header > table{
+        border : none;
+    }
+    .common_table .ant-table .ant-table-content .ant-table-thead .ant-table-selection-column,
+	.common_table .ant-table .ant-table-content .ant-table-body .ant-table-selection-column{
+		width : 50px;
+		min-width : 50px;
+		padding : 0 8px;
+	}
+    .common_table .ant-table-placeholder{
+        background : #f3f3f3;
+        border : 1px solid #d2d2d2 !important;
+        border-top : 0 !important;
+        border-radius : 0 0 10px 10px;
+        background : #fff;
+        margin-top : -1px;
+    }
+    .common_table_set_item_check_box{
+		width : 180px;
+        max-height : 350px;
+        overflow-y : auto;
+	}
+	.common_table_set_item_check_box .ant-checkbox-wrapper{
+		display : -webkit-flex;
+        display : flex;
+        flex-wrap : nowrap;
+        align-items : center;
+		padding : 7px 8px;
+        margin-left : 8px;
+	}
+    .common_table_set_item_check_box .ant-checkbox{
+        top : 0;
+    }
+}
+.common_table_flag{
+    position : absolute;
+    top : 0px;
+    right : 0;
+    width : 20px;
+    height : 41px;
+    background-image: linear-gradient(0deg, rgba(124, 142, 206, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), linear-gradient(#c9cddc, #c9cddc);
+    background-blend-mode: normal, normal;
+}
+.free_columns{
+    height : 20px;
+    margin-bottom : 20px;
+    display : inline-block;
+    a{ margin-right : 3px; }
+}

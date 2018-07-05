@@ -1,0 +1,134 @@
+@unit:750/100vw;
+.messagePage{
+    margin-top:30/@unit;
+   
+}
+.inputMsgStyle{
+    background-color: #fff;
+    box-shadow:0px 0px 9px rgba(129,127,127,0.1);
+}
+.phone{
+    //  margin-left:20/@unit;
+    //  margin-top:30/@unit;
+    display:flex; 
+    align-items:center;
+    height:90/@unit;
+    padding:10/@unit 20/@unit;
+    border-bottom:1px solid #F5F5F9;
+    label{
+        width:230/@unit;
+    }
+    input{
+        font-size:14px !important;
+    }
+}
+.selectStyle{
+    display:flex; 
+    align-items:center;
+    height:90/@unit;
+    padding:10/@unit 20/@unit;
+    border-bottom:1px solid #F5F5F9;
+    div{
+        width:550/@unit;
+        div{
+            padding-left:0 !important;
+            min-height: 30px !important;
+            div{
+                font-size: 14px !important;
+                text-align: left !important;
+                width:10/@unit !important;
+                flex-basis:50% !important;
+                // color:#BBC1C1 !important;
+            }
+            div:last-child{            
+                display: none !important;
+            }
+        }
+    }
+}
+.radioStyle{
+     padding-left:20/@unit;
+     margin-top:30/@unit;
+     border-bottom:1px solid #F5F5F9;
+    //  display:flex; 
+    //  align-items:center;
+}
+.equipmentStyle{
+    // display:flex; 
+    height:160/@unit !important;
+    padding:10/@unit 20/@unit;
+    border-bottom:1px solid #F5F5F9;
+    .required{
+        float:left;
+    }
+    label{
+        width:230/@unit !important;
+        float:left;
+    } 
+}
+.equipList{
+    // display: flex;
+    // flex-wrap: wrap;
+    width:400/@unit;
+    float:left;
+}
+.equipItem{
+    margin-right: 60/@unit;
+    margin-top:30/@unit;
+    float:left;
+    // width:50% !important;
+    display: block;
+    input{
+        width:32/@unit;
+        margin-right:20/@unit;
+    }
+}
+.labelStyle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:40/@unit;
+    padding-left:20/@unit;
+    height:80/@unit;
+}
+.inputStyle{
+    background:none;    
+    outline:none;    
+    border:0px;  
+    padding-left:0;
+}
+.am-list-item .am-input-control input{
+    font-size: 14px !important;
+}
+.radioInput{
+    margin-right:20/@unit;
+}
+.required{
+    margin-right:10/@unit;
+    color: #FF4248;
+	// font-size: 50/@unit;
+}
+select::-ms-expand{display:none;}
+select{
+    border:0px;
+    background: transparent;
+}
+.btn{
+    display: flex;
+    justify-content:center;
+    margin-top:100/@unit;
+}
+.phone>select:invalid { 
+    color: gray;
+ }  
+
+.btnStyle{
+    width:610/@unit;
+    height:100/@unit;
+    border:0px;
+    border-radius: 50/@unit;
+    color:#fff;
+    font-size: 34/@unit;
+    box-shadow:0px 20px 50px 3px rgba(255, 66, 77, 0.2);
+    background: linear-gradient(to right,#ff433f , #ff406e); /* 标准的语法 */
+}

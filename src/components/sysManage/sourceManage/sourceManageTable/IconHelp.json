@@ -1,0 +1,7 @@
+[
+    { "type" : "plus" , "label" : "添加" },
+    { "type" : "edit" , "label" : "进入编辑" },
+    { "type" : "save" , "label" : "保存编辑" },
+    { "type" : "close" , "label" : "取消编辑" },
+    { "type" : "delete" , "label" : "删除" }
+]

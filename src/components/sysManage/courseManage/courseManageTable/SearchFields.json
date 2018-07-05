@@ -1,0 +1,4 @@
+[
+    { "type" : "search" , "key" : "cnName" , "placeholder" : "课程名称" },
+    { "type" : "select" , "key" : "isUse" , "placeholder" : "课程状态" , "options" : [{ "label" : "启用" , "key" : "1" },{ "label" : "停用" , "key" : "0" }] }
+]

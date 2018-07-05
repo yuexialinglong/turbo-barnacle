@@ -1,0 +1,113 @@
+@unit:750/100vw;
+.messagePage{
+    margin-top:30/@unit;
+    background-color: #fff;
+    box-shadow:0px 0px 9px rgba(129,127,127,0.1);
+}
+.informMsg{
+    margin-top:30/@unit;
+    padding-left:31/@unit;
+    display: flex;
+    align-items: flex-start;
+    img{
+        width:30/@unit;
+    }
+    p{  
+        font-size: 30/@unit;
+        margin:0;
+        padding-left:10/@unit;
+        height:45/@unit;
+    }
+}
+.phone{
+    display:flex; 
+    align-items:center;
+    height:90/@unit;
+    padding:10/@unit 20/@unit;
+    border-bottom:1px solid #F5F5F9;
+    label{
+        width:230/@unit;
+    }
+}
+.radioStyle{
+     padding-left:20/@unit;
+     margin-top:30/@unit;
+     height:520/@unit !important;
+     border-bottom:1px solid #F5F5F9;
+}
+.equipmentStyle{
+    padding:10/@unit 20/@unit;
+    border-bottom:1px solid #F5F5F9;
+    label{
+        width:230/@unit !important;
+    } 
+}
+.equipList{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:20/@unit;
+}
+.equipItem{
+    margin-right: 60/@unit;
+    margin-top:30/@unit;
+    display: block;
+    input{
+        width:32/@unit;
+        margin-right:20/@unit;
+    }
+}
+.labelStyle{
+    padding-right:40/@unit;
+    padding-left:20/@unit;
+    height:520/@unit;
+}
+.inputStyle{
+    background:none;    
+    outline:none;    
+    border:0px;  
+    padding-left:0;
+}
+.explain{
+    margin-left:40/@unit;
+}
+.am-list-item .am-input-control input{
+    font-size: 14px !important;
+}
+.radioInput{
+    margin-right:20/@unit;
+}
+.required{
+    margin-right:10/@unit;
+    color: #FF4248;
+}
+select::-ms-expand{display:none;}
+select{
+    border:0px;
+    background: transparent;
+}
+.btn{
+    display: flex;
+    justify-content:center;
+    margin-top:100/@unit;
+}
+.phone>select:invalid { 
+    color: gray;
+ }  
+
+.btnStyle{
+    width:610/@unit;
+    height:100/@unit;
+    border:0px;
+    border-radius: 50/@unit;
+    color:#fff;
+    font-size: 34/@unit;
+}
+[data-bg='inputUse']{
+    background: linear-gradient(to right,#ff433f , #ff406e); /* 标准的语法 */
+    box-shadow:0px 20px 50px 3px rgba(255, 66, 77, 0.2);
+}
+[data-bg='inputDis']{
+    background: #ddd;
+    cursor : not-allowed;
+    //box-shadow:0px 20px 50px 3px rgba(255, 66, 77, 0.2);
+}

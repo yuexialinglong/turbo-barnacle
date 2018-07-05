@@ -1,0 +1,16 @@
+{
+  "plugins": ["react"],
+  "env": {
+    "node": true,
+    "jquery": true,
+    "es6": true,
+    "browser": true
+  },
+  "globals": {
+    "angular": false
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "no-empty-pattern":0
+  }
+}

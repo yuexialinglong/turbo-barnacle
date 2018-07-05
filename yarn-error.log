@@ -1,0 +1,75 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js build
+
+PATH: 
+  C:\Software\Tool\cmder\bin;C:\Software\Tool\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Software\Tool\cmder\vendor\conemu-maximus5;C:\Software\Tool\cmder\vendor\conemu-maximus5\ConEmu;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\wangzy\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\wangzy\AppData\Roaming\curl-7.58.0\I386;C:\Program Files\MacType;C:\Users\wangzy\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\wangzy\AppData\Local\Programs\Python\Python36-32\;C:\Users\wangzy\AppData\Local\Microsoft\WindowsApps;C:\Users\wangzy\AppData\Local\atom\bin;C:\Software\Tool\cmder;C:\Program Files\Bandizip\;C:\Program Files\Microsoft VS Code\bin;C:\Users\wangzy\.babun;C:\Users\wangzy\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\wangzy\AppData\Roaming\npm;C:\Program Files (x86)\Egret\Egret Wing 3\bin;C:\Software\Tool\cmder
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "start": "roadhog server",
+      "build": "roadhog build",
+      "lint": "eslint --ext .js src test",
+      "precommit": "npm run lint"
+    },
+    "dependencies": {
+      "antd": "^3.3.0",
+      "antd-mobile": "^2.1.8",
+      "babel-plugin-import": "^1.6.7",
+      "dva": "^2.1.0",
+      "lodash": "^4.17.10",
+      "moment": "^2.22.1",
+      "promise-polyfill": "^7.1.1",
+      "rc-form": "^2.2.0",
+      "rc-queue-anim": "^1.4.1",
+      "react": "^16.2.0",
+      "react-document-title": "^2.0.3",
+      "react-dom": "^16.2.0",
+      "reqwest": "^2.0.5"
+    },
+    "devDependencies": {
+      "babel-plugin-dva-hmr": "^0.3.2",
+      "eslint": "^4.14.0",
+      "eslint-config-umi": "^0.1.1",
+      "eslint-plugin-flowtype": "^2.34.1",
+      "eslint-plugin-import": "^2.6.0",
+      "eslint-plugin-jsx-a11y": "^5.1.1",
+      "eslint-plugin-react": "^7.1.0",
+      "husky": "^0.12.0",
+      "react-media": "^1.8.0",
+      "redbox-react": "^1.4.3",
+      "roadhog": "^2.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: C:\Windows\system32\cmd.exe
+  Arguments: /d /s /c roadhog build
+  Directory: C:\Users\wangzy\code\company\flow-react
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Users\wangzy\AppData\Roaming\nvm\v8.9.4\node_modules\yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Users\wangzy\AppData\Roaming\nvm\v8.9.4\node_modules\yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Users\wangzy\AppData\Roaming\nvm\v8.9.4\node_modules\yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)

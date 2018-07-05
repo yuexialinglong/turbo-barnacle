@@ -1,0 +1,72 @@
+/*Less方法定义*/
+
+/*渐变*/
+.transition(@data){
+    -webkit-transition:@data;
+       -moz-transition:@data;
+        -ms-transition:@data;
+         -o-transition:@data;
+            transition:@data;
+}
+
+/*转换*/
+.transform(@data){
+    -webkit-transform:@data;
+       -moz-transform:@data;
+        -ms-transform:@data;
+         -o-transform:@data;
+            transform:@data;
+}
+
+/*不可选中不可复制*/
+.unCheckOrCopy(){
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor: default;
+}
+/*圆角*/
+.borderRadius(@top_left,@top_right,@bottom_left,@bottom_right){
+    -webkit-border-top-left-radius : @top_left;
+       -moz-border-top-left-radius : @top_left;
+        -ms-border-top-left-radius : @top_left;
+         -o-border-top-left-radius : @top_left;
+            border-top-left-radius : @top_left;
+    -webkit-border-top-right-radius : @top_right;
+       -moz-border-top-right-radius : @top_right;
+        -ms-border-top-right-radius : @top_right;
+         -o-border-top-right-radius : @top_right;
+            border-top-right-radius : @top_right;
+    -webkit-border-bottom-left-radius : @bottom_left;
+       -moz-border-bottom-left-radius : @bottom_left;
+        -ms-border-bottom-left-radius : @bottom_left;
+         -o-border-bottom-left-radius : @bottom_left;
+            border-bottom-left-radius : @bottom_left;
+    -webkit-border-bottom-right-radius : @bottom_right;
+       -moz-border-bottom-right-radius : @bottom_right;
+        -ms-border-bottom-right-radius : @bottom_right;
+         -o-border-bottom-right-radius : @bottom_right;
+            border-bottom-right-radius : @bottom_right;
+}
+
+/*文本溢出*/
+.textOverflow(@type){
+    text-overflow: -webkit-@type;
+    text-overflow: -moz-@type;
+    text-overflow: -ms-@type;
+    text-overflow: -o-@type;
+    text-overflow: @type;
+}
+
+/*动画属性*/
+.animation(@data){
+    -webkit-animation:@data;
+       -moz-animation:@data;
+        -ms-animation:@data;
+         -o-animation:@data;
+            animation:@data;
+}

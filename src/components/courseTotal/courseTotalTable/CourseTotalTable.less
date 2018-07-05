@@ -1,0 +1,21 @@
+.top_message{
+    >div:first-child{ color : #333; }
+    >div:not(last-child){ margin-right : 40px; }
+}
+.message{
+    display : -webkit-flex;
+    display : flex;
+    align-items : center;
+    flex-wrap : wrap;
+    font-size : 14px;
+}
+.message_item{
+    padding : 0 10px;
+    white-space : nowrap;
+    overflow : hidden;
+    color : #333;
+    &:before{
+        content : attr(data-label);
+        color : #666;
+    }
+}
